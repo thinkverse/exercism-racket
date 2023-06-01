@@ -1,0 +1,11 @@
+*/**/.exercism
+*/**/HINTS.md
+*/**/HELP.md
+
+.DS_Store
+compiled/
+/doc/
+*~
+*.bak
+\#*
+.\#*
