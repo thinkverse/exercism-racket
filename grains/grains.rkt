@@ -3,7 +3,7 @@
 (provide square total)
 
 (define (square a-square)
-  (error "Not implemented yet"))
+  (arithmetic-shift 1 (- a-square 1)))
 
 (define (total)
-  (error "Not implemented yet"))
+  (- (arithmetic-shift 1 64) 1))
