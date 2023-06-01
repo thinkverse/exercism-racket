@@ -3,4 +3,7 @@
 (provide leap-year?)
 
 (define (leap-year? year)
-  (error "Not implemented yet"))
+  (if (zero? (modulo year 400))
+      true (if (zero? (modulo year 100))
+          false (if (zero? (modulo year 4))
+            true false))))
