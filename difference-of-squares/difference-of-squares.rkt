@@ -3,10 +3,11 @@
 (provide sum-of-squares square-of-sum difference)
 
 (define (sum-of-squares number)
-  (error "Not implemented yet"))
+    (/ (* number (+ number 1) (+ (* 2 number) 1)) 6))
 
 (define (square-of-sum number)
-  (error "Not implemented yet"))
+  (let ((term (/ (* number (+ number 1)) 2)))
+    (* term term)))
 
 (define (difference number)
-  (error "Not implemented yet"))
+  (- (square-of-sum number) (sum-of-squares number)))
